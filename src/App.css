@@ -1,0 +1,150 @@
+/* Стили для карточки магазина */
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300italic,300,400italic);
+
+body,
+html {
+  margin: 0;
+  font-family: muli, sans-serif;
+  height: 100%;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #999;
+}
+
+.window {
+  background: #fff;
+  width: 470px;
+  display: flex;
+  min-height: 400px;
+  position: relative;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.main-content {
+  margin: 40px 25px 40px 15px;
+  padding: 30px 15px 25px 8px;
+  box-sizing: border-box;
+  display: flex;
+  color: #222;
+  width: 100%;
+  height: 100%;
+  flex-flow: column;
+  border-color: rgb(117, 6, 6);
+  border-style: dashed;
+}
+
+h1 {
+  letter-spacing: .02rem;
+  font-size: 3.2rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #070707;
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #070707;
+  text-align: left;
+}
+
+h3 {
+  color: #131212;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.description {
+  margin-top: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.highlight-window {
+  height: 550px;
+  width: 400px;
+  background: #ccc url('./assets/item-blue.jpg') center top / cover;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  position: relative;
+}
+
+.highlight-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: url('./assets/item-black.jpg') center top / cover;
+  transition: opacity .4s ease;
+}
+
+.highlight-window:hover .highlight-overlay {
+  opacity: 1;
+}
+
+.background-element {
+  background: #457;
+  position: absolute;
+  width: 120%;
+  height: 400px;
+  left: -50px;
+  top: -80px;
+  transform: rotate(-5deg);
+  transition: background .6s ease;
+}
+
+.divider {
+  width: 80%;
+  height: 1px;
+  background: #ddd;
+  margin: 20px auto;
+}
+
+.purchase-info {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+button {
+  background: #333;
+  border: none;
+  font-weight: 400;
+  height: 40px;
+  padding: 0 25px;
+  color: #fff;
+  cursor: pointer;
+  transition: all .3s ease;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: #555;
+}
+
+.highlight-window.mobile {
+  display: none;
+}
