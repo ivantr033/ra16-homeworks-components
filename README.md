@@ -1,16 +1,35 @@
-# React + Vite
+Компоненты
+===
+## Выполнив это задание, вы:
+- научитесь создавать функциональный и class-based компоненты для реализации страницы интернет-магазина;
+- потренируетесь использовать `vite`.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Компоненты — это фундаментальные строительные блоки любого React-приложения, похожие на детали конструктора. Научившись работать с компонентами, вы сможете создавать интерактивные и масштабируемые интерфейсы из небольших, независимых и переиспользуемых частей.
 
-Currently, two official plugins are available:
+## Описание задания
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Необходимо выполнить следующие задачи:
 
-## React Compiler
+1. [Страница интернет-магазина (функциональный компонент)](store-func).
+1. [Страница интернет-магазина (class-based компонент)](store-class).
+1. [Календарь](calendar) — необязательная задача со звёздочкой.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Любые вопросы по решению задач задавайте в группе в учебном чате.
 
-## Expanding the ESLint configuration
+## Инструкция к выполнению
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Все три задачи лучше сдавать в разных репозиториях, то есть через vite реализовать три проекта, чтобы не
+было конфликта стилей. Но если вы позаботитесь о том, что конфликта не будет, то можете сдавать и в одном проекте.
+
+Все стили необходимо размещать в файле App.css.
+
+Документация по созданию приложения [React](https://vitejs.dev/guide/).
+
+1. Откройте терминал и пропишите следующую команду: `yarn create vite my-app --template react`,
+   либо `yarn create vite my-app --template react-ts`, если
+   нужен шаблон с TypeScript. Эта команда создаст настроенный
+   шаблонный проект.
+2. Откройте созданный проект в своей IDE.
+3. Установите зависимости.
+4. Готово. Чтобы запустить приложение, введите команду: `yarn dev`(либо `npm run dev`).
+  
